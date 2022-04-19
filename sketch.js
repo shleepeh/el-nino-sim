@@ -66,7 +66,7 @@ function draw() {
   for (let p of particles) {
     if (s > 550) {
       if (
-        p.x > warmstart + 50 &&
+        p.x > warmstart &&
         p.x < warmstart + 200 &&
         p.lvl == 0 &&
         random() > 0.92
