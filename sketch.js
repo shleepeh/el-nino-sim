@@ -72,7 +72,7 @@ function draw() {
         random() > 0.92
       ) {
         p.lvl = 1;
-      } else if (p.x > warmstart + 500 && p.lvl == 1 && random() > 0.95) {
+      } else if (p.x > warmstart + 500 && p.lvl == 1 && random() > 0.93) {
         p.lvl = 0;
       }
       if (p.y > (p.lvl == 1 ? 150 : 350)) {
@@ -95,7 +95,7 @@ function draw() {
         p.lvl = 1;
       } else if (p.x < warmstart - 300 && p.lvl == 1 && random() > 0.95) {
         p.lvl = 0;
-      } else if (p.x > warmstart + 300 && p.lvl == 1 && random() > 0.95) {
+      } else if (p.x > warmstart + 300 && p.lvl == 1 && random() > 0.93) {
         p.lvl = 0;
       }
       if (p.lvl == 0 && p.x < warmstart) {
@@ -116,7 +116,7 @@ function draw() {
     if (p.dy > -0.5 && p.dy < 0.5) {
       p.dy *= 3;
     }
-    if (p.dx > 1 || p.dx < -1) {
+    if (p.dx > 1.5 || p.dx < -1.5) {
       p.dx *= 0.95;
     }
     p.x -= p.dx;
